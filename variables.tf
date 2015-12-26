@@ -1,10 +1,5 @@
-#--------------------------------------------------------------
-# AWS settings
-#--------------------------------------------------------------
-variable "access_key" {
-    description = "Please enter your AWS access key"
-}
-
-variable "secret_key" {
-    description = "Please enter your AWS secret key"
+variable "access_key" {}
+variable "secret_key" {}
+variable "region" {
+    default = "us-east-1"
 }
