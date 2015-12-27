@@ -3,7 +3,7 @@ resource "aws_instance" "example" {
     connection {
       user = "ubuntu"
 
-      key_path = "${var.key_path}"
+      key_file = "${var.key_path}"
 
     }
 
