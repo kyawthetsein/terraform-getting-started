@@ -1,2 +1,3 @@
 # terraform-getting-started
-terraform starter
+Simple terraform starter 
+
