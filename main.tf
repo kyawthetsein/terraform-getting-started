@@ -10,6 +10,16 @@ resource "aws_instance" "example" {
     ami = "ami-ef5e24df"
 
     instance_type = "t2.micro"
+     
+    key_name = "vagrant"
+    
+    provisioner "remote-exec" {
+      inline = [
+          "sudo apt-get -y update",
+          "sudo apt-get -y install nginx",
+          "sudo service nginx start"
+      ]
+    } 
 
 }
 
