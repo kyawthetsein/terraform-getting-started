@@ -3,7 +3,7 @@ resource "aws_instance" "example" {
     connection {
       user = "ubuntu"
 
-      key = "${var.key}"
+      key = ENV['key']
 
     }
 
