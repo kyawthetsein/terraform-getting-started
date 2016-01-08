@@ -1,7 +1,3 @@
-provider "atlas" {
-  token = "${var.ATLAS_TOKEN}"
-}
-
 resource "aws_instance" "example" {
 
     connection {
