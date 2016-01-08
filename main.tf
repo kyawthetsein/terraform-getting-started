@@ -1,9 +1,13 @@
+provider "atlas" {
+  token = ENV['atlas_token']
+}
+
 resource "aws_instance" "example" {
 
     connection {
       user = "ubuntu"
 
-      key = ENV['key']
+      key = ENV['aws_ssh_key']
 
     }
 
