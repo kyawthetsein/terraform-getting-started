@@ -1,5 +1,5 @@
 provider "atlas" {
-  token = "${var.atlas_token}"
+  token = "${var.ATLAS_TOKEN}"
 }
 
 resource "aws_instance" "example" {
@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
     connection {
       user = "ubuntu"
 
-      key = "${var.aws_ssh_key}"
+      key = "${var.key}"
 
     }
 
