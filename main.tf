@@ -1,4 +1,4 @@
-resource "aws_instance" "example" {
+resource "aws_instance" "terraform" {
 
     connection {
       user = "ubuntu"
